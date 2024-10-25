@@ -5,6 +5,9 @@
 // Säga till användare att den hade rätt
 // En game loop så att spelet inte avslutas efter första gissningen - while 
 
+Random random= new Random();
+int randomValue = random.Next(1,101);
+
 while (true)
 {
     Console.Write("Gissa ett tal mellan 1-100");
@@ -16,7 +19,6 @@ while (true)
     }
     break; 
 }
-
 
 
 
