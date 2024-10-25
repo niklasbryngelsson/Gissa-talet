@@ -8,6 +8,9 @@
 Random random = new Random();
 int randomValue = random.Next(1, 101);
 
+AudioPlayer player = new();
+player.PlayAudio();
+
 int life = 7;
 
 while (true)
@@ -31,7 +34,8 @@ while (true)
 
     if (input > 100)
     {
-        TextWriter.WarningText("Talet är över 100. Skriv in ett nytt tal");   
+        TextWriter.WarningText("Talet är över 100. Skriv in ett nytt tal");
+        continue;
     }
 
     if (input > randomValue)
@@ -43,6 +47,7 @@ while (true)
     if (input < randomValue)
     {
         TextWriter.WarningText("Talet är högre.");
+        continue;
     }
 
     if (input == randomValue)
