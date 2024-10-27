@@ -1,8 +1,8 @@
 using System.Media;
 
-class AudioPlayer (string path = @"E:\Brights\Gissa-Talet\Doom_Castle.wav")
+class AudioPlayer (string path = @"wav1.wav")
 {
-    System.Media.SoundPlayer soundPlayer = new(path);
+    SoundPlayer soundPlayer = new(path);
     
 
     public void PlayAudio()
