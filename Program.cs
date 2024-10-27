@@ -13,6 +13,8 @@ player.PlayAudio();
 
 int life = 7;
 
+Console.Clear();
+
 while (true)
 {
     life--;
